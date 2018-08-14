@@ -53,7 +53,7 @@ if($age>18) {
 	if(!empty($nationality)) echo " from ".$nationality;
 	echo ". <br>";
 	echo "Your magic number is ".$mgic_no.".";
-} else if($age<18 || $age==18) {
+} else if($age>0 && $age<=18) {
 	echo "You must be older than 18. ";
 }
 ?>
